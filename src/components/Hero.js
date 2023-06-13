@@ -24,7 +24,7 @@ const Hero = () => {
             <span className="font-semibold">MENS AND WOMEN</span>
           </h1>
           <Link
-            to={"/"}
+            to={"/about"}
             className="self-start uppercase font-semibold
                     border-b-2 border-primary"
           >

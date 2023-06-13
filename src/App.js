@@ -12,6 +12,8 @@ import { Contact } from './pages/Contact';
 import { Login } from './pages/Login';
 import { AllProducts } from './pages/AllProducts';
 import {SignUp} from './pages/SignUp'
+import { Checkout } from './pages/Checkout';
+import { ViewCart } from './pages/ViewCart';
 
 
 const App = () => {
@@ -26,6 +28,8 @@ const App = () => {
         <Route path='/allProducts' element={<AllProducts/>}/>
         <Route path='/login' element={<Login/>} />
         <Route path='/signUp' element={<SignUp/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
+        <Route path='/viewcart' element={<ViewCart/>}/>
       </Routes>
       <Sidebar/>
       <Footer/>

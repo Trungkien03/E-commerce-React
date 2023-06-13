@@ -33,7 +33,7 @@ export const AboutUs = () => {
               className="self-start uppercase font-semibold
                     border-b-2 border-primary"
             >
-              Discover More
+              VIEW OUR PRODUCTS
             </Link>
           </div>
         </div>
