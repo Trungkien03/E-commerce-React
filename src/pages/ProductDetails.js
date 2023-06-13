@@ -5,12 +5,15 @@ import { useParams } from "react-router-dom";
 import { CartContext } from "../contexts/CartContext";
 //import product context
 import { ProductContext } from "../contexts/ProductContext";
+//import icons
+import { IoMdAdd, IoMdRemove } from "react-icons/io";
 
 const ProductDetails = () => {
   //get the product id from the url
   const { id } = useParams();
   const { products } = useContext(ProductContext);
   const { addToCart } = useContext(CartContext);
+  const {increaseAmount, decreaseAmount} = useContext(CartContext);
 
   //get the single product based on the id
   const product = products.find((item) => {
@@ -53,11 +56,15 @@ const ProductDetails = () => {
               $ {price}
             </div>
             <p className="mb-8">{description}</p>
+            {/* quantity here */}
+            <div>
+          
+            </div>
             <button
               onClick={() => {
                 addToCart(product, product.id);
               }}
-              className="bg-primary py-4 px-8 text-white"
+              className="bg-primary py-4 px-8 text-white hover:bg-gray-600 rounded transition-colors"
             >
               Add to Cart
             </button>

@@ -7,7 +7,11 @@ import ProductDetails from './pages/ProductDetails';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
+import { AboutUs } from './pages/AboutUs';
+import { Contact } from './pages/Contact';
+import { Login } from './pages/Login';
+import { AllProducts } from './pages/AllProducts';
+import {SignUp} from './pages/SignUp'
 
 
 const App = () => {
@@ -17,6 +21,11 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/product/:id' element={<ProductDetails/>}/>
+        <Route path='/about' element={<AboutUs/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/allProducts' element={<AllProducts/>}/>
+        <Route path='/login' element={<Login/>} />
+        <Route path='/signUp' element={<SignUp/>}/>
       </Routes>
       <Sidebar/>
       <Footer/>

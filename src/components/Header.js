@@ -4,11 +4,12 @@ import { SidebarContext } from "../contexts/SidebarContext";
 //cart context
 import { CartContext } from "../contexts/CartContext";
 //import icons
-import { BsBag } from "react-icons/bs";
+import { BsBag} from "react-icons/bs";
 //import link
 import { Link } from "react-router-dom";
 //import logo
 import Logo from "../img/logo.svg";
+import { Menu } from "./Menu";
 
 const Header = () => {
   // header state
@@ -35,12 +36,14 @@ const Header = () => {
             <img className="w-[40px]" src={Logo} />
           </div>
         </Link>
+        {/* Menu */}
+        <Menu/>
         {/* cart */}
         <div
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-          className="cursor-pointer flex relative max-w-[50px]"
+          className="cursor-pointer flex relative max-w-[50px] "
         >
           <BsBag className="text-2xl" />
           <div
@@ -49,6 +52,7 @@ const Header = () => {
           >
             {itemAmount}
           </div>
+          
         </div>
       </div>
     </header>

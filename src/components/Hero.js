@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
           <h1 className="text-[70px] leading-[1.1] font-light mb-4">
             AUTMN SALE STYLISH <br />
-            <span className="font-semibold">MENS</span>
+            <span className="font-semibold">MENS AND WOMEN</span>
           </h1>
           <Link
             to={"/"}
